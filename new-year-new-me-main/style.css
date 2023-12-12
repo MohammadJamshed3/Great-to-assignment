@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner{
+    width: 100%;
+    height:100vh;
+    background: lightpink;
+    background-image: url(images/banner/banner2.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+section{ 
+    /* display:flex;  */
+    margin-bottom: 10px;
+}
+
+.half-width{
+    width: 60%;
+    padding-left: 10%;
+    border-bottom: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translateY(-50%);
+}
+
+.half-width img{
+    width: 50%;
+}
+.content-area{
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+}
+.content h1 {
+    font-size: 80px;
+    color: black;
+}
+
+.content p{
+    font-size:30px;
+    color: black;
+
+} 
+.content .btn{
+
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: #eeee;
+    font-size: 18px;
+    cursor:pointer;
+    background: #222;
+}
+
+/* main-section */
+
+main{
+    max-width: 1140px;
+ 
+    
+}
+/* Great things Part 1  */ 
+
+.title-about{
+margin-right: 4%;
+background-color: bisque;
+}
+
+.about-banner{
+padding: 10px;
+height: 800px;
+position: relative;
+
+}
+
+.top{
+    margin-top: 20px;
+}
+
+.description{
+color: #777777;
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+/* Great things Part 2  */ 
+
+/* <!-- new area my plan   */
+
+.end{
+    text-align: center;
+}
+
+
+.plane{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+ 
+
+}
+
+.item{
+    background-color: cadetblue;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 30px;
+    border-radius:25px;
+    /* margin-right: 99px; */
+    /* padding: 50px; */
+    justify-content: space-between;
+}
+
+/* <!-- new area my plan   */
+
+
+.Great{
+    position: relative;
+    display: inline-block;
+    padding: 0% 10% 0% 10%;
+    margin-bottom: 100px;
+    margin-right: 25px;
+
+}
+
+.Great img {
+    display: block;
+
+    background-image: url(images/watch.png) ;
+    background-repeat:no-repeat ;
+    background-position: center;
+    height: 300px;
+}
+.overly-text{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: larger;
+}
+
+.Great button{
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    color: black;
+    border-radius: 5px;
+    border-color: white;
+}
+
+
+.footer{
+    padding: 10%;
+    display: flex;
+    float: left;
+    background-color: coral;
+    width: 100%;
+    color: #fff;
+}
+
+
+.footer-right{
+    margin-left: 25%;
+
+}
+
+.footer-right input{
+    padding:10px;
+    border-radius: 5px;
+}
+
+.footer-right button{
+    padding: 10px 15px 10px 15px;
+    color: goldenrod;
+    background-color: cadetblue;
+}
+
+/* Responsive Styles  */
+
+@media screen and (max-width:576px){
+.banner{
+    flex-direction:column ;
+    padding:10px 20px;
+}
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {}
+
+.hide{
+    display: none;
+}
